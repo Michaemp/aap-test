@@ -1,0 +1,14 @@
+.external-link {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-decoration: underline;
+    font-size: 16px;
+    color: #2C62A8;
+  }
+  .icon { 
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+  }
+ 

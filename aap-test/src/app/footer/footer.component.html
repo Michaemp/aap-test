@@ -1,0 +1,24 @@
+<footer class="mat-app-background">
+    <div class="container">
+        <div class="footer-row">
+            <nav>
+                <ul class="footer-menu">
+                    <li style="color: black;"><a mat-button>Federal Communications Commission <br> 45 L Street NE<br> Washington, DC 20554</a></li>
+                    <li> <a mat-button>ASL Video Call: 1-844-432-2275</a> </li>
+                    <li> <a mat-button>Fax: 1-866-418-0232</a> </li>
+                    <li> <a mat-button>Contact Us</a></li>
+                </ul>
+                <img src="assets/images/logos/fcc-seal-bw-2020.png" alt="">
+            </nav>
+
+            <nav *ngFor="let col of footerColumns">
+                <ul class="footer-menu">
+                  <li *ngFor="let menu of col" 
+                      [ngClass]="{'special-menu': menu === 'CATEGORIES'  || menu === 'BUREAUS & OFFICES'}">
+                    <a mat-button>{{ menu }}</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,39 @@
+.alert-banner {
+  background-color: #FFF2CB;
+  /* Sample error background */
+  color: #1D2B3E;
+  padding: 16px;
+  border-left: 5px solid #FFBE2E;
+  text-align: left;
+  width: 1084px;
+  min-width: 440px;
+  margin-top: 32px;
+  color: var(--primary-darkest, #1D2B3E);
+  display: flex;
+  flex-direction: row;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  /* 150% */
+}
+
+.alert-banner.success {
+  background-color: #d4edda;
+  /* Sample success background */
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+/* Other alert types as needed (info, warning) */
+
+.icon {
+  width: 22px;
+  height: 19px;
+  margin-right: 16px;
+}
+
+.alert-msg {
+  width: width;
+}
