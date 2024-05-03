@@ -57,3 +57,30 @@ font-weight: 600;
 line-height: 24px;
 }
 
+
+.wrapper{
+    width: 1124px;
+    margin-bottom: 16px;
+  }
+  .divider{
+    width: 1124px;
+    height: 1px;
+    margin-bottom: 16px;
+    background: var(--neutral-light, #DADADA);
+  }
+
+  .container {
+    width: 100%; 
+  }
+  .footer-container {
+    width: 100%;
+     border-top:  5px solid #2C62A8; 
+     margin-top: 48px;
+  }
+  .content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    
+  }
