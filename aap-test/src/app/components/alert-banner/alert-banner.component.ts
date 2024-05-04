@@ -1,11 +1,10 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-alert-banner',
   standalone: true,
-  imports: [MatIconModule, CommonModule], // Include CommonModule here
+  imports: [CommonModule], // Include CommonModule here
   templateUrl: './alert-banner.component.html',
   styleUrls: ['./alert-banner.component.css']
 })

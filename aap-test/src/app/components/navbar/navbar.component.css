@@ -1,24 +1,17 @@
-.mat-app-background {
-    background-color: #13428B; /* Use your theme's primary color */
-    
-  }
+.menu-bar{
+display: flex;
+justify-content: space-between;
   
-  .app-title {
-    font-size: 1.2em;
-    color: white; /* Customize as needed */
-    text-decoration: none; 
-  }
-  
-  .spacer {
-    flex: 1 1 auto;
-  }
-  /* ... your existing styles */
-
-.logo-container {
-    margin-right: 32px; /* Add spacing as needed */
-  }
-  
-  .logo {
-    height: 30px; /* Adjust as needed */
-    width: auto;  /* Maintain aspect ratio */
-  }
+}
+.logo{
+  height:35px;
+}
+.item{
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+.group{
+  align-self: center;
+  padding: 6px;
+}

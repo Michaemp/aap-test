@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {AlertBannerComponent} from '../../components/alert-banner/alert-banner.component'
 
 @Component({
   selector: 'app-home',

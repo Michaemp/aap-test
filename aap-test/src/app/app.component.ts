@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { OnInit } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
@@ -12,4 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'FCC'; 
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
