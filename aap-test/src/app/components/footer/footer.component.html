@@ -1,24 +1,119 @@
-<footer class="mat-app-background">
-    <div class="main-container">
-        <div class="footer-row">
-            <nav>
-                <ul class="footer-menu">
-                    <li style="color: black;"><a mat-button>Federal Communications Commission <br> 45 L Street NE<br> Washington, DC 20554</a></li>
-                    <li> <a mat-button>ASL Video Call: 1-844-432-2275</a> </li>
-                    <li> <a mat-button>Fax: 1-866-418-0232</a> </li>
-                    <li> <a mat-button>Contact Us</a></li>
-                </ul>
+<footer class="bg-white " aria-labelledby="footer-heading">
+  <div class="mx-auto px-6 pb-8 flex justify-center  lg:px-8 ">
+    <div class="xl:grid xl:grid-cols-2 max-w-[1124px]    xl:gap-8 ">
+      <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 ">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">Federal Communications Commission <br> 45 L Street
+              NE<br> Washington, DC 20554</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">ASL Video Call: 1-844-432-2275</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Fax: 1-866-418-0232</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Contact Us</a>
+              </li>
+              <li>
                 <img src="assets/images/logos/fcc-seal-bw-2020.png" alt="">
-            </nav>
-
-            <nav *ngFor="let col of footerColumns">
-                <ul class="footer-menu">
-                  <li *ngFor="let menu of col" 
-                      [ngClass]="{'special-menu': menu === 'CATEGORIES'  || menu === 'BUREAUS & OFFICES'}">
-                    <a mat-button>{{ menu }}</a>
-                  </li>
-                </ul>
-              </nav>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <ul role="list" class=" space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Website Policies & Notices</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">FOIA</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">No Fear Act Data</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Digital Strategy</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Open Government Directive</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Plain Writing Act</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">RSS Feeds & Email Updates</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Accessibility</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Vulnerability Disclosures Policy</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">CATEGORIES</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">About the FCC</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Proceedings & Actions</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Licensing & Databases</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Reports & Research</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">News & Events</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6  hover:text-gray-900">For Consumers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">BUREAUS & OFFICES</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Consumer</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Enforcement</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Inspector General</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Media</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Public Safety</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Space</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Wireless</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Wireline</a>
+              </li>
+              <li>
+                <a href="#" class="text-sm leading-6 hover:text-gray-900">Offices</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </footer>
