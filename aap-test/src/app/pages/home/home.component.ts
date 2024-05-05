@@ -3,7 +3,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { User } from '../../models/user';
 import { UsersService } from '../../services/users.service';
-import {usrs} from './data'
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -17,6 +16,7 @@ export class HomeComponent implements OnInit {
   currentPage: number = 1;
   limit: number = 10; // Items per page
   msg: string= ""
+  class:string=""
  
   constructor(private usersService: UsersService) { }
 
@@ -24,14 +24,13 @@ export class HomeComponent implements OnInit {
     this.usersService.getAllUsers().subscribe({
       next: (data) => {
         this.allUsers = data;
+        console.log(data)
         this.updatePage(1); // Initialize the view with the first page
-        this.msg="this data is fetched from an api"
       },
       error: (error) => {
         console.error('Error fetching users:', error);
-        this.allUsers = usrs;
-        this.updatePage(1);
-        this.msg="this data is fetched from local file"
+        this.msg=error.error.error
+        this.class="hidden"
       }
     });
   }
