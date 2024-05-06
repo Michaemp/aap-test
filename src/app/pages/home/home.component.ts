@@ -1,4 +1,4 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit , ElementRef, ViewChild } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { User } from '../../models/user';
@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   limit: number = 10; // Items per page
   msg: string= ""
   class:string=""
+  alrt_class:string=""
+  @ViewChild('myButton') myButton!: ElementRef;
  
   constructor(private usersService: UsersService) { }
 
@@ -24,13 +26,15 @@ export class HomeComponent implements OnInit {
     this.usersService.getAllUsers().subscribe({
       next: (data) => {
         this.allUsers = data;
-        console.log(data)
         this.updatePage(1); // Initialize the view with the first page
+        this.alrt_class="hidden"
+        
       },
       error: (error) => {
         console.error('Error fetching users:', error);
         this.msg=error.error.error
         this.class="hidden"
+        this.myButton.nativeElement.click();
       }
     });
   }
